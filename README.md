@@ -12,6 +12,8 @@ A polished, growing collection of the most iconic first program in computing —
 ![License](https://img.shields.io/badge/license-MIT-0ea5e9?style=for-the-badge)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-f59e0b?style=for-the-badge)
 
+### [✦ Explore the live website](https://hello-world-atlas-rishi.vercel.app)
+
 </div>
 
 ---
@@ -29,7 +31,8 @@ This repository turns that moment into an **atlas of programming languages**.
 - **52 languages & formats** in one clean, browsable collection.
 - Every example is intentionally tiny and keeps the focus on the language itself.
 - A positive comment is tucked into each source file without changing the classic output.
-- A **searchable visual showcase** lives in [`docs/`](./docs/).
+- A polished, responsive **live website** lives in [`website/`](./website/) and is deployed on Vercel.
+- Search, category filters, random discovery, live source previews, copy-to-clipboard, keyboard shortcuts, and dark/light themes.
 - A machine-readable catalog powers the showcase and repository checks.
 - GitHub Actions verifies that every catalog entry exists and still contains `Hello, World!`.
 - Contribution rules make it easy to grow toward 75, 100, and beyond.
@@ -96,6 +99,12 @@ hello-world/
 ├── ... 47 more language folders
 ├── assets/
 │   └── hero.svg
+├── website/
+│   ├── index.html
+│   ├── styles.css
+│   ├── app.js
+│   ├── catalog.json
+│   └── favicon.svg
 ├── docs/
 │   ├── index.html
 │   ├── style.css
@@ -134,9 +143,13 @@ g++ C++/main.cpp -o hello && ./hello
 
 Toolchains differ by operating system, so see each ecosystem's normal compiler/runtime setup when needed.
 
-## 🖥️ Visual showcase
+## 🖥️ Live website
 
-The [`docs/`](./docs/) folder contains a responsive **Hello World Atlas** explorer with search and category filters. It is ready to be published with GitHub Pages or another static host.
+The [`website/`](./website/) folder is the polished public face of the project. It is intentionally framework-free and fast, with a responsive layout, live repository source previews, search, filters, random discovery, code copying, keyboard shortcuts, and theme switching.
+
+**Live:** https://hello-world-atlas-rishi.vercel.app
+
+The original lightweight explorer remains in [`docs/`](./docs/) as a secondary showcase.
 
 ## 🤝 Add another language
 
@@ -152,6 +165,8 @@ Hello, World!
 - [x] 50 languages & formats
 - [x] Searchable showcase
 - [x] Catalog integrity check
+- [x] Dedicated responsive website
+- [x] Live deployment
 - [ ] 75 languages
 - [ ] 100 languages
 - [ ] Community-submitted variants
