@@ -1,0 +1,32 @@
+name: Bug report
+description: Report something that is broken in the atlas or website
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Hello World Atlas.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Tell us what you expected and what happened instead.
+      placeholder: Describe the issue clearly.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where did it happen?
+      description: Language file, page, feature, or live URL.
+      placeholder: e.g. Compare mode / Python/hello.py
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open ...\n2. Click ...\n3. See ..."
+  - type: textarea
+    id: context
+    attributes:
+      label: Extra context
+      description: Screenshots, browser/device, console errors, or anything else that helps.
