@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080b16" />
+  <title>Hello World Atlas</title>
+  <meta name="description" content="Explore Hello, World! across 50+ programming languages and formats." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+
+  <main class="shell">
+    <nav class="nav">
+      <a class="brand" href="#top"><span class="brand-mark">&gt;_</span> hello-world</a>
+      <a class="github-link" href="https://github.com/Rishikeshsanin/hello-world">View on GitHub ↗</a>
+    </nav>
+
+    <section class="hero" id="top">
+      <p class="eyebrow">THE FIRST PROGRAM, EVERYWHERE</p>
+      <h1><span>Hello,</span> World!</h1>
+      <p class="lead">One tiny greeting across dozens of languages, paradigms, eras, and ecosystems.</p>
+      <div class="stats">
+        <div><strong id="languageCount">52</strong><span>languages & formats</span></div>
+        <div><strong>1</strong><span>universal greeting</span></div>
+        <div><strong>∞</strong><span>places to begin</span></div>
+      </div>
+    </section>
+
+    <section class="explorer" aria-labelledby="explorer-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">EXPLORE THE ATLAS</p>
+          <h2 id="explorer-title">Pick a language.</h2>
+        </div>
+        <label class="search">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search Python, Rust, JVM..." autocomplete="off" />
+        </label>
+      </div>
+
+      <div class="filters" id="filters" aria-label="Category filters"></div>
+      <div class="grid" id="languageGrid"></div>
+      <p class="empty" id="emptyState" hidden>No languages matched that search. Try another term.</p>
+    </section>
+
+    <section class="closing">
+      <div class="terminal">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>hello-world</span></div>
+        <pre><code><span class="muted">$</span> start something new
+<span class="success">Hello, World!</span>
+<span class="muted"># every great build begins somewhere</span></code></pre>
+      </div>
+      <div>
+        <p class="eyebrow">KEEP BUILDING</p>
+        <h2>Small beginnings count.</h2>
+        <p>The code may only print two words, but the habit behind it can build anything.</p>
+      </div>
+    </section>
+
+    <footer>Built for curiosity, learning, and the joy of starting.</footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
