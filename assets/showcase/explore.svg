@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090b12"/><stop offset="1" stop-color="#07191d"/></linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a78bfa"/><stop offset=".45" stop-color="#38bdf8"/><stop offset="1" stop-color="#34d399"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="34"/></filter>
+  </defs>
+  <rect width="1400" height="820" rx="28" fill="url(#bg)"/>
+  <circle cx="180" cy="110" r="150" fill="#7c3aed" opacity=".13" filter="url(#glow)"/>
+  <circle cx="1220" cy="700" r="180" fill="#06b6d4" opacity=".12" filter="url(#glow)"/>
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="90" y="105" fill="#c7ff6b" font-size="24" font-weight="800">&gt;_ hello.world</text>
+    <text x="90" y="190" fill="#f8fafc" font-size="74" font-weight="800">Same idea.</text>
+    <text x="90" y="268" fill="url(#g)" font-size="74" font-weight="800">Different syntax.</text>
+    <text x="92" y="320" fill="#94a3b8" font-size="24">Explore 52 languages through one universal first program.</text>
+  </g>
+  <g transform="translate(90 375)">
+    <rect width="1220" height="330" rx="22" fill="#0d1320" stroke="#ffffff" stroke-opacity=".12"/>
+    <rect width="1220" height="52" rx="22" fill="#121a29"/><rect y="30" width="1220" height="22" fill="#121a29"/>
+    <circle cx="28" cy="26" r="6" fill="#fb7185"/><circle cx="50" cy="26" r="6" fill="#facc15"/><circle cx="72" cy="26" r="6" fill="#4ade80"/>
+    <text x="1090" y="33" fill="#9fb4cf" font-family="ui-monospace,monospace" font-size="16">main.rs</text>
+    <g font-family="ui-monospace,monospace" font-size="22">
+      <text x="48" y="110" fill="#c084fc">fn <tspan fill="#f8fafc">main() {</tspan></text>
+      <text x="88" y="155" fill="#6f86aa">// this is a comment and is ignored by the compiler</text>
+      <text x="88" y="195" fill="#6f86aa">// Every great journey begins with a first line.</text>
+      <text x="88" y="255" fill="#f8fafc">println!(<tspan fill="#86efac">"Hello, World!"</tspan>);</text>
+      <text x="48" y="295" fill="#f8fafc">}</text>
+    </g>
+  </g>
+  <g font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700">
+    <rect x="90" y="735" width="118" height="46" rx="14" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".12"/><text x="123" y="764" fill="#cbd5e1">Explore</text>
+    <rect x="222" y="735" width="122" height="46" rx="14" fill="#8b5cf6"/><text x="251" y="764" fill="#fff">Compare</text>
+    <rect x="358" y="735" width="108" height="46" rx="14" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".12"/><text x="391" y="764" fill="#cbd5e1">Learn</text>
+    <rect x="480" y="735" width="96" height="46" rx="14" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".12"/><text x="514" y="764" fill="#cbd5e1">Play</text>
+  </g>
+</svg>

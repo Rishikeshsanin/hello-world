@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Live Hello World Atlas
+    url: https://hello-world-atlas-rishi.vercel.app
+    about: Check the current production version before reporting a website issue.
