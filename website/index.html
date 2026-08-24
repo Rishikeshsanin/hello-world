@@ -2,13 +2,13 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b0d12" />
-  <meta name="description" content="Hello World Atlas — 52 tiny first programs, one joyful place to explore them." />
-  <meta property="og:title" content="Hello World Atlas" />
-  <meta property="og:description" content="52 ways to say hello to a computer." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#080b12" />
+  <meta name="description" content="Hello World Atlas — explore, compare, learn, and play with 52 programming languages and formats." />
+  <meta property="og:title" content="Hello World Atlas — Upgraded Version" />
+  <meta property="og:description" content="One greeting. 52 languages. Explore, compare, learn, and play." />
   <meta property="og:type" content="website" />
-  <title>Hello World Atlas</title>
+  <title>Hello World Atlas — Upgraded Version</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,28 +22,24 @@
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Hello World Atlas home">
-      <span class="brand-mark" aria-hidden="true">&gt;_</span>
+      <span class="brand-mark">&gt;_</span>
       <span>hello<span class="brand-dot">.</span>world</span>
     </a>
     <nav class="nav-actions" aria-label="Primary navigation">
-      <button class="icon-button" id="themeButton" type="button" aria-label="Toggle theme" title="Toggle theme">
-        <span class="theme-icon" aria-hidden="true">◐</span>
-      </button>
-      <a class="soft-button" href="https://github.com/Rishikeshsanin/hello-world" target="_blank" rel="noreferrer">
-        GitHub <span aria-hidden="true">↗</span>
-      </a>
+      <button class="icon-button" id="themeButton" type="button" aria-label="Toggle theme" title="Toggle theme">◐</button>
+      <a class="soft-button" href="https://github.com/Rishikeshsanin/hello-world" target="_blank" rel="noreferrer">GitHub ↗</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero shell">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="pulse-dot"></span> a tiny celebration of starting</div>
-        <h1>52 ways to say<br /><span class="gradient-text">hello to a computer.</span></h1>
-        <p class="hero-text">Every language looks different at first. But every journey can begin with the same two words.</p>
+        <div class="eyebrow"><span class="pulse-dot"></span> upgraded version · interactive language museum</div>
+        <h1>Same idea.<br /><span class="gradient-text">Different syntax.</span></h1>
+        <p class="hero-text">One tiny program becomes a way to explore how programming languages look, differ, evolved, and think.</p>
         <div class="hero-actions">
-          <a class="primary-button" href="#explore">Explore the atlas <span aria-hidden="true">↓</span></a>
-          <button class="ghost-button" id="randomHeroButton" type="button">Surprise me <span aria-hidden="true">✦</span></button>
+          <button class="primary-button" type="button" data-open-view="explore">Explore the atlas ↓</button>
+          <button class="ghost-button" id="randomHeroButton" type="button">Surprise me ✦</button>
         </div>
         <div class="hero-note"><kbd>/</kbd> search <span>•</span> <kbd>R</kbd> random <span>•</span> <kbd>Esc</kbd> close</div>
       </div>
@@ -59,87 +55,173 @@
           <div class="terminal-top">
             <div class="traffic"><span></span><span></span><span></span></div>
             <span id="heroFile">hello.py</span>
-            <span class="terminal-status">● live</span>
+            <span class="terminal-status">● atlas</span>
           </div>
-          <div class="terminal-code" aria-live="polite">
-            <div class="code-line"><span class="line-number">1</span><span class="comment" id="heroComment"># small starts become big things</span></div>
-            <div class="code-line"><span class="line-number">2</span><span id="heroCode"><span class="fn">print</span><span class="plain">(</span><span class="string">"Hello, World!"</span><span class="plain">)</span></span></div>
-            <div class="terminal-output"><span class="prompt">›</span> Hello, World! <span class="blink">▋</span></div>
-          </div>
+          <pre class="hero-code" id="heroCode"># this is a comment and is ignored by the interpreter
+# Every great journey begins with a first line.
+
+print("Hello, World!")</pre>
+          <div class="terminal-output"><span class="prompt">›</span> Hello, World! <span class="blink">▋</span></div>
         </div>
       </div>
     </section>
 
     <section class="stats shell" aria-label="Project statistics">
       <div class="stat"><strong id="languageCount">52</strong><span>languages & formats</span></div>
-      <div class="stat"><strong id="categoryCount">16</strong><span>little ecosystems</span></div>
-      <div class="stat"><strong>1</strong><span>universal first hello</span></div>
+      <div class="stat"><strong id="categoryCount">16</strong><span>ecosystems</span></div>
+      <div class="stat"><strong>4</strong><span>ways to explore</span></div>
       <div class="stat stat-quote"><span>“Every great build starts with one small line.”</span></div>
     </section>
 
-    <section class="explore shell" id="explore">
-      <div class="section-heading">
+    <section class="museum shell" id="museum">
+      <div class="section-heading compact-heading">
         <div>
-          <div class="eyebrow">the collection</div>
-          <h2>Pick a language.<br />Meet its first line.</h2>
+          <div class="eyebrow">the upgraded atlas</div>
+          <h2>Explore. Compare.<br />Learn. Play.</h2>
         </div>
-        <p>Search, filter, open the source, or hit random and let the atlas choose for you.</p>
+        <p>The collection stays simple, but now every hello can teach you something.</p>
       </div>
 
-      <div class="toolbar" id="toolbar">
-        <label class="search-box" for="searchInput">
-          <span aria-hidden="true">⌕</span>
-          <input id="searchInput" type="search" placeholder="Search Python, Rust, Web..." autocomplete="off" />
-          <kbd>/</kbd>
-        </label>
-        <button class="random-button" id="randomButton" type="button"><span aria-hidden="true">✦</span> Random hello</button>
+      <div class="museum-tabs" role="tablist" aria-label="Atlas modes">
+        <button class="museum-tab active" data-view="explore" role="tab" aria-selected="true"><span>01</span> Explore</button>
+        <button class="museum-tab" data-view="compare" role="tab" aria-selected="false"><span>02</span> Compare</button>
+        <button class="museum-tab" data-view="learn" role="tab" aria-selected="false"><span>03</span> Learn</button>
+        <button class="museum-tab" data-view="play" role="tab" aria-selected="false"><span>04</span> Play</button>
       </div>
 
-      <div class="filters" id="filters" aria-label="Language categories"></div>
-      <div class="results-row"><span id="resultCount">52 languages</span><button id="clearButton" class="text-button" type="button" hidden>Clear filters</button></div>
-      <div class="language-grid" id="languageGrid" aria-live="polite"></div>
-      <div class="empty-state" id="emptyState" hidden>
-        <div class="empty-face">¯\_(ツ)_/¯</div>
-        <h3>No hello found here.</h3>
-        <p>Try another search — there are plenty of tiny beginnings to discover.</p>
-        <button class="ghost-button" id="emptyResetButton" type="button">Show everything</button>
-      </div>
+      <section class="museum-view active" id="view-explore" data-panel="explore">
+        <div class="mode-intro">
+          <div><span class="mode-kicker">EXPLORE</span><h3>Pick a language. Meet its first line.</h3></div>
+          <p>Search all 52 entries, filter by ecosystem, preview the real source, or let the atlas choose.</p>
+        </div>
+        <div class="toolbar">
+          <label class="search-box" for="searchInput">
+            <span>⌕</span>
+            <input id="searchInput" type="search" placeholder="Search Python, Rust, Web..." autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+          <button class="random-button" id="randomButton" type="button">✦ Random hello</button>
+        </div>
+        <div class="filters" id="filters" aria-label="Language categories"></div>
+        <div class="results-row"><span id="resultCount">52 languages</span><button id="clearButton" class="text-button" type="button" hidden>Clear filters</button></div>
+        <div class="language-grid" id="languageGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <div class="empty-face">¯\_(ツ)_/¯</div>
+          <h3>No hello found here.</h3>
+          <p>Try another search.</p>
+          <button class="ghost-button" id="emptyResetButton" type="button">Show everything</button>
+        </div>
+      </section>
+
+      <section class="museum-view" id="view-compare" data-panel="compare" hidden>
+        <div class="mode-intro">
+          <div><span class="mode-kicker">COMPARE</span><h3>Same greeting. Two ways of thinking.</h3></div>
+          <p>Put any two catalog entries side by side and compare their source, category, file, and comment style.</p>
+        </div>
+        <div class="compare-toolbar">
+          <label>Left language<select id="compareLeft"></select></label>
+          <button class="swap-button" id="swapCompare" type="button" title="Swap languages">⇄</button>
+          <label>Right language<select id="compareRight"></select></label>
+          <button class="ghost-button" id="randomPairButton" type="button">Random pair ✦</button>
+        </div>
+        <div class="compare-grid">
+          <article class="compare-card" id="leftCompareCard">
+            <div class="compare-head"><div><span class="compare-category" id="leftCategory"></span><h4 id="leftName"></h4></div><span class="compare-file" id="leftFile"></span></div>
+            <div class="passport-strip" id="leftStrip"></div>
+            <pre class="compare-code"><code id="leftCode">Loading…</code></pre>
+            <a class="source-link" id="leftSource" target="_blank" rel="noreferrer">Open source ↗</a>
+          </article>
+          <article class="compare-card" id="rightCompareCard">
+            <div class="compare-head"><div><span class="compare-category" id="rightCategory"></span><h4 id="rightName"></h4></div><span class="compare-file" id="rightFile"></span></div>
+            <div class="passport-strip" id="rightStrip"></div>
+            <pre class="compare-code"><code id="rightCode">Loading…</code></pre>
+            <a class="source-link" id="rightSource" target="_blank" rel="noreferrer">Open source ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="museum-view" id="view-learn" data-panel="learn" hidden>
+        <div class="mode-intro">
+          <div><span class="mode-kicker">LEARN</span><h3>A tiny passport for every hello.</h3></div>
+          <p>Learn the basics without turning the project into a textbook — then explore how languages write comments.</p>
+        </div>
+        <div class="learn-grid">
+          <article class="learn-card passport-card">
+            <div class="learn-card-top">
+              <div><span class="learn-kicker">LANGUAGE PASSPORT</span><h4 id="passportTitle">Python</h4></div>
+              <select id="passportSelect" aria-label="Choose a language passport"></select>
+            </div>
+            <div class="passport-grid" id="passportGrid"></div>
+            <div class="passport-code-wrap">
+              <div class="mini-filebar"><span class="file-dot"></span><span id="passportFile"></span></div>
+              <pre class="passport-code"><code id="passportCode"></code></pre>
+            </div>
+          </article>
+
+          <article class="learn-card comment-atlas-card">
+            <div class="learn-card-top">
+              <div><span class="learn-kicker">COMMENT ATLAS</span><h4>52 ways to write nothing.</h4></div>
+            </div>
+            <p class="learn-copy">Comments do not produce the greeting, but they reveal the visual personality of a language.</p>
+            <div class="comment-groups" id="commentGroups"></div>
+            <div class="comment-members" id="commentMembers">
+              <span class="comment-members-title">Choose a syntax</span>
+              <div id="commentMemberList"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="museum-view" id="view-play" data-panel="play" hidden>
+        <div class="mode-intro">
+          <div><span class="mode-kicker">PLAY</span><h3>Can you recognize the language?</h3></div>
+          <p>No account, no database — just syntax, four choices, a score, and a streak.</p>
+        </div>
+        <article class="game-card">
+          <div class="game-top">
+            <div><span class="game-label">GUESS THE LANGUAGE</span><h4>Which language says hello like this?</h4></div>
+            <div class="game-score"><span id="scoreValue">0</span><small>score</small><span id="streakValue">0</span><small>streak</small></div>
+          </div>
+          <div class="game-terminal">
+            <div class="mini-filebar"><span class="file-dot"></span><span>mystery.???</span></div>
+            <pre><code id="gameCode">Loading challenge…</code></pre>
+          </div>
+          <div class="game-choices" id="gameChoices"></div>
+          <div class="game-feedback" id="gameFeedback">Pick an answer.</div>
+          <button class="ghost-button" id="nextQuestionButton" type="button" hidden>Next language →</button>
+        </article>
+      </section>
     </section>
 
     <section class="manifesto shell">
       <div class="manifesto-card">
-        <div class="manifesto-icon" aria-hidden="true">✦</div>
-        <p>Different syntax.<br />Different eras.<br /><strong>Same little spark.</strong></p>
-        <span>This project is a reminder that knowing everything is never the starting point. Starting is.</span>
+        <div class="manifesto-icon">✦</div>
+        <p>One greeting.<br />Many languages.<br /><strong>Infinite beginnings.</strong></p>
+        <span>Explore the syntax. Compare the ideas. Learn the patterns. Play with what you notice.</span>
       </div>
     </section>
   </main>
 
   <footer class="footer shell">
     <a class="brand footer-brand" href="#top"><span class="brand-mark">&gt;_</span><span>hello<span class="brand-dot">.</span>world</span></a>
-    <p>Built with curiosity, tiny programs, and a lot of hellos.</p>
+    <p>Upgraded Version · built with curiosity, tiny programs, and a lot of hellos.</p>
     <a href="https://github.com/Rishikeshsanin/hello-world" target="_blank" rel="noreferrer">view source ↗</a>
   </footer>
 
   <div class="modal-backdrop" id="modalBackdrop" hidden></div>
   <aside class="code-modal" id="codeModal" aria-hidden="true" aria-label="Language code preview">
     <div class="modal-head">
-      <div>
-        <span class="modal-kicker" id="modalCategory">General</span>
-        <h3 id="modalLanguage">Python</h3>
-      </div>
+      <div><span class="modal-kicker" id="modalCategory">General</span><h3 id="modalLanguage">Python</h3></div>
       <button class="icon-button modal-close" id="modalClose" type="button" aria-label="Close code preview">×</button>
     </div>
-    <div class="modal-filebar">
-      <span class="file-dot"></span><span id="modalFile">hello.py</span>
-      <span class="modal-loading" id="modalLoading">loading source…</span>
-    </div>
+    <div class="modal-filebar"><span class="file-dot"></span><span id="modalFile">hello.py</span><span class="modal-loading" id="modalLoading">loading source…</span></div>
     <pre class="code-panel"><code id="modalCode">Loading…</code></pre>
     <div class="modal-actions">
       <button class="primary-button" id="copyButton" type="button">Copy code</button>
+      <button class="ghost-button" id="compareFromModal" type="button">Compare</button>
       <a class="ghost-button" id="githubFileLink" href="#" target="_blank" rel="noreferrer">Open on GitHub ↗</a>
     </div>
-    <p class="modal-tip">Tiny code. Real language. One universal greeting.</p>
+    <p class="modal-tip">Tiny code. Real source. One universal greeting.</p>
   </aside>
 
   <div class="toast" id="toast" role="status" aria-live="polite">Copied to clipboard ✦</div>
