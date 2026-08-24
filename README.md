@@ -1,43 +1,98 @@
 <div align="center">
-  <img src="./assets/hero.svg" alt="Hello World Atlas" width="100%" />
+  <img src="./assets/hero.svg" alt="Hello World Atlas banner" width="100%" />
 
 # Hello World Atlas
 
-**One greeting. 50+ languages. Infinite beginnings.**
+### One greeting. **52 languages & formats.** Infinite beginnings.
 
-A polished, growing collection of the most iconic first program in computing — `Hello, World!` — written across popular programming languages, classic languages, shells, markup, and modern ecosystems.
+A playful, interactive programming-language museum built around the most iconic first program in computing — **`Hello, World!`**
 
-![Languages](https://img.shields.io/badge/languages%20%26%20formats-52-7c3aed?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-growing-22c55e?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-0ea5e9?style=for-the-badge)
-![Contributions](https://img.shields.io/badge/contributions-welcome-f59e0b?style=for-the-badge)
+[![Live](https://img.shields.io/badge/Live-hello.world-c7ff6b?style=for-the-badge&labelColor=111827)](https://hello-world-atlas-rishi.vercel.app)
+[![Languages](https://img.shields.io/badge/Languages-52-79d9ff?style=for-the-badge&labelColor=111827)](./LANGUAGES.md)
+[![Catalog Check](https://img.shields.io/github/actions/workflow/status/Rishikeshsanin/hello-world/catalog-check.yml?style=for-the-badge&label=Catalog%20Check)](https://github.com/Rishikeshsanin/hello-world/actions)
+[![License](https://img.shields.io/badge/License-MIT-a78bfa?style=for-the-badge&labelColor=111827)](./LICENSE)
 
-### [✦ Explore the live website](https://hello-world-atlas-rishi.vercel.app)
+**[✦ Open the live atlas](https://hello-world-atlas-rishi.vercel.app)** · **[Browse all languages](./LANGUAGES.md)** · **[Contribute](./CONTRIBUTING.md)**
 
 </div>
 
 ---
 
-## 🌍 The idea
+## ✨ What is this?
 
-Every programmer remembers a first program. Different syntax, different tools, different eras — but the same tiny moment of making a machine say something back.
+Every programmer starts somewhere. For many of us, that somewhere is a tiny program that makes a computer answer back:
 
-This repository turns that moment into an **atlas of programming languages**.
+```text
+Hello, World!
+```
 
-> **Every great build starts with one small line. Keep building.**
+**Hello World Atlas** collects that same greeting across modern languages, classic languages, shells, markup, scientific ecosystems, functional languages, and more — then turns the collection into an interactive experience where you can **explore, compare, learn, and play**.
 
-## ✨ What makes this different
+> Different syntax. Different eras. Same little spark.
 
-- **52 languages & formats** in one clean, browsable collection.
-- Every example is intentionally tiny and keeps the focus on the language itself.
-- A positive comment is tucked into each source file without changing the classic output.
-- A polished, responsive **live website** lives in [`website/`](./website/) and is deployed on Vercel.
-- Search, category filters, random discovery, live source previews, copy-to-clipboard, keyboard shortcuts, and dark/light themes.
-- A machine-readable catalog powers the showcase and repository checks.
-- GitHub Actions verifies that every catalog entry exists and still contains `Hello, World!`.
-- Contribution rules make it easy to grow toward 75, 100, and beyond.
+---
 
-## 🧭 Explore the atlas
+## 🖥️ Upgraded Version
+
+<div align="center">
+  <a href="https://hello-world-atlas-rishi.vercel.app">
+    <img src="./assets/showcase/explore.svg" alt="Hello World Atlas interactive website preview" width="100%" />
+  </a>
+</div>
+
+The live site is intentionally lightweight and framework-free, but it is more than a static code gallery:
+
+| Mode | What it does |
+|---|---|
+| **Explore** | Search and filter all 52 entries, open the real source, copy code, or pick a random hello. |
+| **Compare** | Put two languages side by side and compare syntax, category, files, and comment style. |
+| **Learn** | Open compact language passports and explore the **Comment Atlas**. |
+| **Play** | Guess a language from its Hello World syntax and build a score + streak. |
+
+<div align="center">
+  <img src="./assets/showcase/museum.svg" alt="Compare, Learn, Comment Atlas and Guess the Language preview" width="100%" />
+</div>
+
+### Also built in
+
+- 🌗 dark + light themes
+- 🔎 instant search and ecosystem filters
+- ✦ random language discovery
+- 📋 copy-to-clipboard
+- ↗ direct GitHub source links
+- ⌨️ keyboard shortcuts
+- 📱 responsive mobile layout
+- 🧭 rotating real-source hero preview
+- ✅ automated catalog integrity checks
+- 🚫 no database or account required
+
+---
+
+## 💬 The two-comment idea
+
+Every source file keeps the classic greeting **and** carries two tiny comments:
+
+1. an educational comment showing what a comment is,
+2. a small positive line that gives the project its personality.
+
+For example, in C:
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    // this is a comment and is ignored by the compiler
+    // Every great journey begins with a first line.
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+Different languages use different comment syntax — `//`, `#`, `--`, `%`, `;`, `<!-- -->`, `/* */`, and more — which inspired the interactive **Comment Atlas** on the website.
+
+---
+
+## 🌍 52 languages & formats
 
 | | | | |
 |---|---|---|---|
@@ -55,19 +110,54 @@ This repository turns that moment into an **atlas of programming languages**.
 | [SQL](./SQL/hello.sql) | [Swift](./Swift/hello.swift) | [Tcl](./Tcl/hello.tcl) | [TypeScript](./TypeScript/hello.ts) |
 | [VB.NET](./VB.NET/Program.vb) | [Zig](./Zig/main.zig) | [Markdown](./Markdown/hello.md) | [XML](./XML/hello.xml) |
 
-See the full catalog in **[LANGUAGES.md](./LANGUAGES.md)**.
+For categories, filenames, and the full index, see **[LANGUAGES.md](./LANGUAGES.md)**.
 
-## 🪄 A few ways to say the same thing
+---
+
+## 🪄 Same greeting, different syntax
+
+<table>
+<tr>
+<td width="50%">
+
+**Python**
 
 ```python
+# this is a comment and is ignored by the interpreter
+# Every great journey begins with a first line.
 print("Hello, World!")
 ```
 
+</td>
+<td width="50%">
+
+**Rust**
+
 ```rust
 fn main() {
+    // this is a comment and is ignored by the compiler
+    // Every great journey begins with a first line.
     println!("Hello, World!");
 }
 ```
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**JavaScript**
+
+```javascript
+// this is a comment and is ignored by the interpreter
+// Every great journey begins with a first line.
+console.log("Hello, World!");
+```
+
+</td>
+<td width="50%">
+
+**Go**
 
 ```go
 package main
@@ -75,43 +165,35 @@ package main
 import "fmt"
 
 func main() {
+    // this is a comment and is ignored by the compiler
+    // Every great journey begins with a first line.
     fmt.Println("Hello, World!")
 }
 ```
 
-```haskell
-main :: IO ()
-main = putStrLn "Hello, World!"
-```
+</td>
+</tr>
+</table>
 
-Same message. Four very different ways of thinking.
+---
 
-## 🗂️ Repository map
+## 🗂️ Project structure
 
 ```text
 hello-world/
-├── Ada/
-├── C/
-├── C++/
-├── Java/
-├── Python/
-├── Rust/
-├── ... 47 more language folders
-├── assets/
-│   └── hero.svg
-├── website/
+├── Ada/ ... XML/                # 52 language / format examples
+├── website/                     # production interactive atlas
 │   ├── index.html
 │   ├── styles.css
 │   ├── app.js
 │   ├── catalog.json
 │   └── favicon.svg
-├── docs/
-│   ├── index.html
-│   ├── style.css
-│   ├── app.js
-│   └── catalog.json
+├── docs/                        # original lightweight explorer
+├── assets/
+│   ├── hero.svg
+│   └── showcase/                # README visual previews
 ├── scripts/
-│   └── check_catalog.py
+│   └── check_catalog.py         # catalog integrity validation
 ├── .github/workflows/
 │   └── catalog-check.yml
 ├── CONTRIBUTING.md
@@ -119,7 +201,9 @@ hello-world/
 └── README.md
 ```
 
-## 🚀 Run a few favorites
+---
+
+## 🚀 Run a few locally
 
 ```bash
 # Python
@@ -141,43 +225,67 @@ gcc C/main.c -o hello && ./hello
 g++ C++/main.cpp -o hello && ./hello
 ```
 
-Toolchains differ by operating system, so see each ecosystem's normal compiler/runtime setup when needed.
+Each ecosystem needs its normal compiler/runtime installed.
 
-## 🖥️ Live website
+---
 
-The [`website/`](./website/) folder is the polished public face of the project. It is intentionally framework-free and fast, with a responsive layout, live repository source previews, search, filters, random discovery, code copying, keyboard shortcuts, and theme switching.
+## 🧪 Quality checks
 
-**Live:** https://hello-world-atlas-rishi.vercel.app
+The catalog is machine-readable and verified automatically with GitHub Actions.
 
-The original lightweight explorer remains in [`docs/`](./docs/) as a secondary showcase.
-
-## 🤝 Add another language
-
-Found a language missing from the atlas? Contributions are welcome. Read **[CONTRIBUTING.md](./CONTRIBUTING.md)**, add the smallest idiomatic example, and keep the output exactly:
-
-```text
-Hello, World!
+```bash
+python scripts/check_catalog.py
 ```
+
+The check makes sure every catalog entry exists, still contains `Hello, World!`, and follows the project's comment convention.
+
+---
+
+## 🤝 Contributing
+
+Missing a language? Found a cleaner idiomatic version? Want to improve the atlas?
+
+Read **[CONTRIBUTING.md](./CONTRIBUTING.md)** and open a pull request. The ideal contribution is intentionally small:
+
+- use the ecosystem's conventional filename and syntax,
+- keep the visible greeting as `Hello, World!`,
+- keep the educational + positive comments where comments are valid,
+- avoid dependencies when the standard library is enough,
+- update the catalog when adding a new language.
+
+---
 
 ## 🎯 Roadmap
 
 - [x] 25 languages
-- [x] 50 languages & formats
-- [x] Searchable showcase
-- [x] Catalog integrity check
-- [x] Dedicated responsive website
-- [x] Live deployment
-- [ ] 75 languages
-- [ ] 100 languages
-- [ ] Community-submitted variants
-- [ ] Tiny history notes for each language
+- [x] 50+ languages & formats
+- [x] searchable language explorer
+- [x] real GitHub source previews
+- [x] Comment Atlas
+- [x] side-by-side language comparison
+- [x] language passports
+- [x] Guess the Language mini-game
+- [x] responsive production website
+- [x] automated catalog checks
+- [ ] 75 curated languages
+- [ ] 100 curated languages
+- [ ] richer language history / influence data
+- [ ] community-submitted variants
 
 ---
 
+## 📜 License
+
+Distributed under the **MIT License**. See [`LICENSE`](./LICENSE).
+
 <div align="center">
+
+---
 
 ### `Hello, World!` is small. Starting is not.
 
 **Build something today. 🌱**
+
+[Live Atlas](https://hello-world-atlas-rishi.vercel.app) · [Languages](./LANGUAGES.md) · [Contributing](./CONTRIBUTING.md)
 
 </div>
