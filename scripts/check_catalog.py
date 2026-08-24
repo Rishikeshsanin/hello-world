@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "docs" / "catalog.json"
 GREETING = "Hello, World!"
+COMMENT_TEXT = "this is a comment and is ignored by the compiler"
 
 
 def main() -> int:
@@ -37,6 +38,8 @@ def main() -> int:
         text = path.read_text(encoding="utf-8", errors="replace")
         if GREETING not in text:
             errors.append(f"greeting missing from: {relative}")
+        if COMMENT_TEXT not in text:
+            errors.append(f"educational comment missing from: {relative}")
 
     if errors:
         print("Catalog check failed:")
@@ -46,6 +49,7 @@ def main() -> int:
 
     print(f"✓ {len(entries)} catalog entries verified.")
     print(f"✓ Every source file contains {GREETING!r}.")
+    print("✓ Every source file includes the educational comment.")
     return 0
 
 

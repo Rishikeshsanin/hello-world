@@ -1,4 +1,5 @@
 ; x86-64 NASM for Linux
+; this is a comment and is ignored by the compiler
 ; Every great journey begins with a first instruction.
 
 section .data
