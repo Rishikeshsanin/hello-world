@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest a language, interaction, or improvement
+title: "[Idea]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Keep ideas focused on making the atlas more useful, delightful, or educational.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to add?
+      placeholder: Describe the idea in a few sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why would it improve the project?
+      placeholder: What would visitors learn, discover, or enjoy?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - New language / format
+        - Explore
+        - Compare
+        - Learn / Comment Atlas
+        - Guess the Language
+        - UI / accessibility
+        - Documentation
+        - Other
+  - type: textarea
+    id: notes
+    attributes:
+      label: References or mockups
+      description: Optional links, snippets, screenshots, or implementation notes.
